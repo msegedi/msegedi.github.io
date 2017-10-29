@@ -1,0 +1,215 @@
+﻿$font-color: #202020;
+$font-family: Verdana, Geneva, sans-serif;
+$primary-color: #2d86b0;
+$secondary-color: #13c203;
+
+@import "_mixins";
+
+/* RESET CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* END RESET CSS */
+
+body {
+    background-color: gray;
+    color: $font-color;
+    font-family: $font-family;
+    font-size: 100%;
+    margin: 15px;
+}
+
+h1 {
+    color: $primary-color;
+    font-size: 18px;
+}
+
+h2 {
+    color: $primary-color;
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+a:link, a:active, a:visited {
+    color: $primary-color;
+}
+
+a:hover {
+    color: $secondary-color;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 40px;
+}
+
+li {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+em {
+    font-style: italic;
+}
+
+.body-wrapper {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-wrapper {
+    background-color: white;
+    border: solid 1px black;
+    padding: 25px;
+}
+
+.logo {
+    float: left;
+    font-size: 28px;
+    line-height: 36px;
+
+    .first-name {
+        color: $primary-color;
+    }
+
+    .last-name {
+        color: $secondary-color;
+    }
+}
+
+.top-nav {
+    float: right;
+    line-height: 36px;
+
+    a:link, a:active, a:visited, a:hover {
+        border: solid 1px white;
+        padding: 5px;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background-color: #e1e1e1;
+        border: solid 1px black;
+        @include border-radius(3px);
+    }
+
+    .nav-separator {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+.headline-wrapper {
+    text-align: center;
+    letter-spacing: 10px;
+
+    hr {
+        background-color: $secondary-color;
+        border-style: none;
+        height: 1px;
+        width: 100%;
+    }
+}
+
+.content-body {
+    padding-top: 20px;
+}
+
+.footer {
+    font-size: 80%;
+    padding-top: 15px;
+
+    a:link, a:active, a:visited {
+        color: #202020;
+    }
+
+    a:hover {
+        color: black;
+    }
+}
+
+.clear-float {
+    clear: both;
+}
+
+.h2-underline {
+    background-color: $secondary-color;
+    border-style: none;
+    height: 1px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    text-align: left;
+    width: 50%;
+}
+
+.li-detail {
+    color: gray;
+    font-size: 80%;
+}
+
+.primary-color {
+    color: $primary-color;
+}
+
+.secondary-color {
+    color: $secondary-color;
+}
+
+.s20 {
+    height: 20px;
+}
